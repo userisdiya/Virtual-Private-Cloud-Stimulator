@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VPC Simulator</title>
+  <link href=”https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css” rel=”stylesheet”>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #F5EFE7;
+      color: #213555;
+    }
+
+    .navbar {
+      background-color: #213555;
+    }
+
+    .navbar-brand {
+      color: #D8C4B6 !important;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .navbar-nav .nav-link {
+      color: #F5EFE7 !important;
+      font-size: 1rem;
+      margin: 0 5px;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, #213555, #3E5879);
+      color: #F5EFE7;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero-section h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+    }
+
+    .btn-cta {
+      background-color: #D8C4B6;
+      color: #213555;
+      padding: 12px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 25px;
+    }
+
+    .btn-cta:hover {
+      background-color: #F5EFE7;
+      color: #213555;
+    }
+
+    .features-section {
+      padding: 50px 20px;
+      background-color: #F5EFE7;
+    }
+
+    .card {
+      background-color: #D8C4B6;
+      border: none;
+      color: #213555;
+    }
+
+    .reviews-section, .why-choose-us-section {
+      padding: 50px 20px;
+      background-color: #F5EFE7;
+    }
+
+    .footer {
+      background-color: #213555;
+      color: #D8C4B6;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .footer a {
+      color: #F5EFE7;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">VPC Simulator</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/user_manual">User Manual</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact_us">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="container">
+      <h1>Welcome to the VPC Simulator</h1>
+      <p>Visualize and manage virtual private cloud concepts with ease.</p>
+      <a href="/register" class="btn btn-cta mt-4">Get Started</a>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="features-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Features</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <div class="card-body">
+              <h5 class="card-title">VPC Creation</h5>
+              <p class="card-text">Create and manage Virtual Private Clouds (VPCs) effortlessly with our interactive platform.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Subnet Management</h5>
+              <p class="card-text">Add, remove, and manage subnets to define your network's structure.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Routing Tables</h5>
+              <p class="card-text">Visualize and configure routing tables to define traffic flow within your VPC.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Security Groups</h5>
+              <p class="card-text">Control access to your resources with flexible security group configurations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Real-Time Visualizations</h5>
+              <p class="card-text">Get a clear picture of your cloud network with dynamic visualizations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <div class="card-body">
+              <h5 class="card-title">User-Friendly Interface</h5>
+              <p class="card-text">Experience an intuitive and easy-to-navigate UI for cloud management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Customer Reviews Section -->
+  <div class="reviews-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Customer Reviews</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p>"The VPC Simulator made understanding cloud networks a breeze. Highly recommend!"</p>
+            <footer class="blockquote-footer">Divy</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p>"A user-friendly tool that simplifies complex concepts. Great for beginners and professionals alike."</p>
+            <footer class="blockquote-footer">Dhruv</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Choose Us Section -->
+  <div class="why-choose-us-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Why Choose VPC Simulator?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5>Comprehensive Features</h5>
+          <p>We offer all the tools you need to create, manage, and visualize your VPC networks.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Trusted by Professionals</h5>
+          <p>Our platform is trusted by cloud network professionals around the world.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Continuous Support</h5>
+          <p>We provide 24/7 support to ensure you have the best experience possible.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 VPC Simulator. All rights reserved. | <a href="/privacy">Privacy Policy</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
